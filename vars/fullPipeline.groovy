@@ -1,3 +1,4 @@
+#!groovy
 def call(Map config = [:], Closure body = {}) {
     def tmpCfg = createConfiguration(body)
 
@@ -46,7 +47,5 @@ def call(Map config = [:], Closure body = {}) {
                 }
             }
         }
-
     }
-    body()
 }
