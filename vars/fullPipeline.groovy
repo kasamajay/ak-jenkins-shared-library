@@ -1,4 +1,5 @@
 def call(Map config = [:], Closure body = {}) {
+    def tmpCfg = createConfiguration(body)
 
     pipeline {
         agent {
