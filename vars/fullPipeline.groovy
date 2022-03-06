@@ -1,4 +1,4 @@
-def call(Closure body = {}) {
+def call(Map c = [:], Closure body = {}) {
   def config = createConfiguration(body)
     
   pipeline {
