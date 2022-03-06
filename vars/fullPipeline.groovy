@@ -1,4 +1,4 @@
-def call(body) {
+def call(Closure body = {}) {
   def config = createConfiguration(body)
     
   pipeline {
