@@ -1,5 +1,5 @@
 def call(Map config = [:], Closure body = {}) {
-    
+
     pipeline {
         agent {
             label any
@@ -34,9 +34,10 @@ def call(Map config = [:], Closure body = {}) {
                         println("checkout code")
                     }
                 }
+                post {
+                }
             }
-            post {
-            }
+
 
             stage('build') {
                 steps {
