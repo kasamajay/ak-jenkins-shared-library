@@ -5,7 +5,9 @@ def call(Map c = [:], Closure body = {}) {
         agent { label any }
         stages {
             stage('checkout') {
-                sh "echo 'Hello'"
+                steps {
+                    sh "echo 'Hello'"
+                }
             }
         }
     }
