@@ -17,16 +17,12 @@ def call(Map config = [:], Closure body = {}) {
         //     kubernetes {        
         //     }
         // }
-        triggers {}
-        options {}
-        parameters {}
-        tools {}
-        environment {}
+
         stages {
             stage('checkout') {
-                options {}
-                when {}
-                input {}
+                
+                
+                
                 steps {
                     sh 'echo "checkout code"'
                     echo 'checkout code'
@@ -34,8 +30,7 @@ def call(Map config = [:], Closure body = {}) {
                         println("checkout code")
                     }
                 }
-                post {
-                }
+
             }
 
 
@@ -50,8 +45,7 @@ def call(Map config = [:], Closure body = {}) {
                 }
             }
         }
-        post {
-        }
+
     }
     body()
 }
