@@ -1,6 +1,4 @@
-def call(Map c = [:], Closure body = {}) {
-  def config = createConfiguration(body)
-    
+def call() {
     pipeline {
         agent { label any }
         stages {
