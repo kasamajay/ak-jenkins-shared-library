@@ -1,5 +1,5 @@
-def call(Map config = [:], Closure body = {}) {
-    tmpCfg = createConfiguration(body)
+def call() {
+    
 
     pipeline {
         agent any
