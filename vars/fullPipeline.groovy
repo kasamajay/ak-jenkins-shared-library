@@ -1,3 +1,3 @@
-def call() {
-    echo "Hello"
+def call(Map config = [:]) {
+    echo "Hello $config.name"
 }
